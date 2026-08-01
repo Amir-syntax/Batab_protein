@@ -1,0 +1,481 @@
+<!doctype html>
+
+<html dir="rtl" lang="fa">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>پروتئین ممتازه | OBSIDIAN PROTEIN</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-bright": "#fcf8f9",
+              error: "#ba1a1a",
+              "on-tertiary-container": "#f2fdff",
+              "inverse-on-surface": "#f3f0f1",
+              "on-secondary": "#ffffff",
+              tertiary: "#00656f",
+              "outline-variant": "#e6bdbb",
+              "tertiary-container": "#00808c",
+              "on-error": "#ffffff",
+              "on-tertiary": "#ffffff",
+              "surface-container-lowest": "#ffffff",
+              "on-background": "#1b1b1c",
+              primary: "#b90027",
+              "tertiary-fixed-dim": "#77d4e1",
+              "on-secondary-fixed": "#1a1c1c",
+              "surface-container-low": "#f6f3f4",
+              "on-error-container": "#93000a",
+              "secondary-fixed-dim": "#c6c6c7",
+              "primary-fixed": "#ffdad8",
+              "on-secondary-container": "#616363",
+              "surface-variant": "#e5e2e3",
+              "surface-container-high": "#eae7e8",
+              surface: "#fcf8f9",
+              background: "#fcf8f9",
+              "on-primary-fixed-variant": "#92001d",
+              "on-surface": "#1b1b1c",
+              "inverse-primary": "#ffb3b1",
+              secondary: "#5d5f5f",
+              "on-primary-container": "#fffaf9",
+              "secondary-container": "#dfe0e0",
+              "primary-fixed-dim": "#ffb3b1",
+              outline: "#916e6d",
+              "tertiary-fixed": "#93f1fe",
+              "surface-container-highest": "#e5e2e3",
+              "on-primary": "#ffffff",
+              "surface-tint": "#bf0029",
+              "on-surface-variant": "#5d3f3e",
+              "surface-container": "#f0edee",
+              "on-tertiary-fixed-variant": "#004f57",
+              "on-primary-fixed": "#410007",
+              "on-tertiary-fixed": "#001f23",
+              "inverse-surface": "#303031",
+              "secondary-fixed": "#e2e2e2",
+              "surface-dim": "#dcd9da",
+              "on-secondary-fixed-variant": "#454747",
+              "primary-container": "#e31837",
+              "error-container": "#ffdad6",
+            },
+            borderRadius: {
+              DEFAULT: "0.125rem",
+              lg: "0.25rem",
+              xl: "0.5rem",
+              full: "0.75rem",
+            },
+            spacing: {
+              lg: "48px",
+              base: "4px",
+              xs: "8px",
+              "margin-mobile": "20px",
+              gutter: "24px",
+              md: "24px",
+              sm: "16px",
+              "margin-desktop": "64px",
+              xl: "80px",
+            },
+            fontFamily: {
+              "display-lg": ["Sora"],
+              "display-lg-mobile": ["Sora"],
+              "headline-md": ["Sora"],
+              "body-lg": ["Sora"],
+              "body-md": ["Sora"],
+              "label-caps": ["Sora"],
+            },
+            fontSize: {
+              "display-lg": [
+                "48px",
+                {
+                  lineHeight: "1.1",
+                  letterSpacing: "-0.02em",
+                  fontWeight: "700",
+                },
+              ],
+              "display-lg-mobile": [
+                "32px",
+                {
+                  lineHeight: "1.2",
+                  letterSpacing: "-0.01em",
+                  fontWeight: "700",
+                },
+              ],
+              "headline-md": [
+                "24px",
+                {
+                  lineHeight: "1.3",
+                  letterSpacing: "-0.01em",
+                  fontWeight: "600",
+                },
+              ],
+              "body-lg": [
+                "18px",
+                { lineHeight: "1.6", letterSpacing: "0", fontWeight: "400" },
+              ],
+              "body-md": [
+                "16px",
+                { lineHeight: "1.5", letterSpacing: "0", fontWeight: "400" },
+              ],
+              "label-caps": [
+                "12px",
+                {
+                  lineHeight: "1.0",
+                  letterSpacing: "0.1em",
+                  fontWeight: "600",
+                },
+              ],
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      body {
+        font-family: "Sora", sans-serif;
+      }
+      .material-symbols-outlined {
+        font-variation-settings:
+          "FILL" 0,
+          "wght" 400,
+          "GRAD" 0,
+          "opsz" 24;
+      }
+      /* Custom scrollbar for premium feel */
+      ::-webkit-scrollbar {
+        width: 6px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #fcf8f9;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #b90027;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body class="bg-surface text-on-surface antialiased">
+    <!-- Top Navigation Bar -->
+    <header
+      class="w-full top-0 sticky z-50 bg-surface border-b border-outline-variant"
+    >
+      <div
+        class="flex justify-between items-center h-20 max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop"
+      >
+        <div class="flex items-center gap-sm">
+          <span
+            class="font-display-lg text-[24px] md:text-[32px] tracking-tighter text-primary"
+            >OBSIDIAN PROTEIN</span
+          >
+        </div>
+        <nav class="hidden md:flex items-center gap-lg">
+          <a
+            class="font-label-caps text-label-caps text-secondary hover:text-primary transition-colors duration-200"
+            href="#socials"
+            >شبکه‌های اجتماعی</a
+          >
+          <a
+            class="font-label-caps text-label-caps text-secondary hover:text-primary transition-colors duration-200"
+            href="#location"
+            >موقعیت ما</a
+          >
+          <button
+            class="bg-primary text-on-primary px-lg py-sm font-label-caps text-label-caps hover:bg-primary-container transition-all Active:opacity-80"
+          >
+            همین حالا سفارش دهید
+          </button>
+        </nav>
+        <button class="md:hidden text-primary">
+          <span class="material-symbols-outlined text-[32px]">menu</span>
+        </button>
+      </div>
+    </header>
+    <main>
+      <!-- Hero Section -->
+      <section
+        class="relative min-h-[70vh] flex flex-col items-center justify-center text-center px-margin-mobile md:px-margin-desktop py-xl overflow-hidden bg-surface-bright"
+      >
+        <div class="max-w-4xl mx-auto space-y-lg">
+          <div class="mb-lg animate-fade-in">
+            <img
+              alt="Obsidian Protein Logo"
+              class="w-32 h-32 md:w-48 md:h-48 mx-auto object-contain mix-blend-multiply"
+              src="https://lh3.googleusercontent.com/aida/AP1WRLtiUMiPwUOq2Kyl4QlhmGUnkZYEP5b9fDLX-_Khdo31J8HoLmZBmT6l4zBwRo9mcNyRleiKGq2FRDm_cIr-e0kVTUqN-zAxJgac3cq8cVgXv2KHkTwBTFxvru08b-RNo20EiXtm8-K6PJToVZoKyT07PZQP8cNQ5VxPln4uAOOHUcfhblHZnuTeWyHQQiW-4YfTcB2gFEKLo7YzzK2cjA5V3cads9t1e2zq69kDiE0vZmkqC1bgSH0x7MY"
+            />
+          </div>
+          <h1
+            class="font-display-lg text-display-lg-mobile md:text-display-lg text-on-background tracking-tighter leading-none mb-sm"
+          >
+            پروتئین ممتازه:
+            <span class="text-primary">استاندارد نوین کیفیت</span>
+          </h1>
+          <p
+            class="font-body-lg text-body-lg text-secondary max-w-2xl mx-auto leading-relaxed"
+          >
+            در وسواس ما برای ارائه بهترین‌ها، هیچ سازشی وجود ندارد. ما هنر قصابی
+            را با دقت مهندسی ترکیب کرده‌ایم تا تجربه‌ای فراتر از انتظار برای
+            سفره‌های شما خلق کنیم.
+          </p>
+          <div class="pt-lg">
+            <div class="w-16 h-0.5 bg-primary mx-auto"></div>
+          </div>
+        </div>
+      </section>
+      <!-- Social Channels Section -->
+      <section class="py-xl bg-white" id="socials">
+        <div
+          class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop"
+        >
+          <div class="text-center mb-xl">
+            <h2 class="font-headline-md text-headline-md text-on-surface mb-xs">
+              ارتباط با ما
+            </h2>
+            <p class="font-body-md text-body-md text-secondary">
+              در شبکه‌های اجتماعی ما را دنبال کنید
+            </p>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-md">
+            <!-- Instagram Card -->
+            <a
+              class="group block p-xl border border-outline-variant hover:border-primary transition-all duration-300 bg-surface-bright"
+              href="#"
+            >
+              <div class="flex flex-col items-center text-center gap-md">
+                <div
+                  class="w-16 h-16 rounded-full bg-primary-container/10 flex items-center justify-center text-primary group-hover:scale-110 transition-transform"
+                >
+                  <span class="material-symbols-outlined text-[32px]"
+                    >photo_camera</span
+                  >
+                </div>
+                <div>
+                  <h3 class="font-headline-md text-headline-md mb-xs">
+                    اینستاگرام
+                  </h3>
+                  <p class="font-body-md text-body-md text-secondary">
+                    مشاهده آخرین محصولات و پیشنهادات ویژه
+                  </p>
+                </div>
+              </div>
+            </a>
+            <!-- Telegram Card -->
+            <a
+              class="group block p-xl border border-outline-variant hover:border-primary transition-all duration-300 bg-surface-bright"
+              href="#"
+            >
+              <div class="flex flex-col items-center text-center gap-md">
+                <div
+                  class="w-16 h-16 rounded-full bg-primary-container/10 flex items-center justify-center text-primary group-hover:scale-110 transition-transform"
+                >
+                  <span class="material-symbols-outlined text-[32px]"
+                    >send</span
+                  >
+                </div>
+                <div>
+                  <h3 class="font-headline-md text-headline-md mb-xs">
+                    تلگرام
+                  </h3>
+                  <p class="font-body-md text-body-md text-secondary">
+                    عضویت در کانال اطلاع‌رسانی و ثبت سفارش
+                  </p>
+                </div>
+              </div>
+            </a>
+            <!-- WhatsApp Card -->
+            <a
+              class="group block p-xl border border-outline-variant hover:border-primary transition-all duration-300 bg-surface-bright"
+              href="#"
+            >
+              <div class="flex flex-col items-center text-center gap-md">
+                <div
+                  class="w-16 h-16 rounded-full bg-primary-container/10 flex items-center justify-center text-primary group-hover:scale-110 transition-transform"
+                >
+                  <span class="material-symbols-outlined text-[32px]"
+                    >chat</span
+                  >
+                </div>
+                <div>
+                  <h3 class="font-headline-md text-headline-md mb-xs">
+                    واتس‌اپ
+                  </h3>
+                  <p class="font-body-md text-body-md text-secondary">
+                    ارتباط مستقیم با واحد فروش و پشتیبانی
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- Location Section -->
+      <section class="py-xl bg-surface-container-low" id="location">
+        <div
+          class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop"
+        >
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-xl items-center">
+            <div
+              class="order-2 lg:order-1 h-[400px] md:h-[500px] border border-outline-variant bg-white p-base overflow-hidden relative group"
+            >
+              <div
+                class="absolute inset-0 z-10 bg-primary/5 pointer-events-none transition-opacity group-hover:opacity-0"
+              ></div>
+              <div
+                class="w-full h-full grayscale-[0.5] contrast-[1.1]"
+                data-alt="A clean, minimalist high-key map of a professional metropolitan district in Tehran. The map features a light gray and white aesthetic with a single bright crimson red pin marking the location. The style is modern, architectural, and high-end, matching a premium meat boutique brand identity. Soft diffused lighting effects on the surface of the map."
+                data-location="Tehran, Iran"
+                style="
+                  background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuC-ety81jgMANHj2gaQAEant7eX6J75D7ep7yc3t2XjE01b280gDkOkq9uzyIiN2YEKq1HWtUJt2aWchdnK_bM4Vm-4hD2uR3lcGus0i1EWoyMQI_s3PNAtnJWepxwOpa5ou0gDwMLZC4zPnDRMeTd5ULvzMHfb7Z_3RosDUle-LGuRCgB-4kLQdhcOtayYt24MHusFN9hlfSm4SWHy9Pg7KiQFto4qUAByxvUwsFJBBZmiK9z0dfJD&quot;);
+                "
+              ></div>
+            </div>
+            <div class="order-1 lg:order-2 space-y-lg">
+              <div>
+                <span
+                  class="font-label-caps text-label-caps text-primary tracking-widest block mb-xs"
+                  >مراجعه حضوری</span
+                >
+                <h2
+                  class="font-display-lg text-display-lg-mobile md:text-headline-md text-on-surface mb-md"
+                >
+                  میزبان شما هستیم
+                </h2>
+                <p
+                  class="font-body-lg text-body-lg text-secondary leading-relaxed"
+                >
+                  برای تجربه کیفیت از نزدیک، به شعبه مرکزی ما مراجعه کنید. محیطی
+                  بهداشتی و مدرن طراحی شده برای انتخاب دقیق شما.
+                </p>
+              </div>
+              <div class="space-y-md border-r-2 border-primary pr-md">
+                <div class="flex items-start gap-sm">
+                  <span class="material-symbols-outlined text-primary"
+                    >location_on</span
+                  >
+                  <div>
+                    <h4
+                      class="font-label-caps text-label-caps text-on-surface mb-xs"
+                    >
+                      آدرس
+                    </h4>
+                    <p class="font-body-md text-body-md text-secondary">
+                      تهران، خیابان ولیعصر، نرسیده به میدان ونک، مجتمع تجاری
+                      پلاتین
+                    </p>
+                  </div>
+                </div>
+                <div class="flex items-start gap-sm">
+                  <span class="material-symbols-outlined text-primary"
+                    >call</span
+                  >
+                  <div>
+                    <h4
+                      class="font-label-caps text-label-caps text-on-surface mb-xs"
+                    >
+                      تلفن تماس
+                    </h4>
+                    <p class="font-body-md text-body-md text-secondary">
+                      ۰۲۱-۸۸۸۸۸۸۸۸
+                    </p>
+                  </div>
+                </div>
+                <div class="flex items-start gap-sm">
+                  <span class="material-symbols-outlined text-primary"
+                    >schedule</span
+                  >
+                  <div>
+                    <h4
+                      class="font-label-caps text-label-caps text-on-surface mb-xs"
+                    >
+                      ساعات کاری
+                    </h4>
+                    <p class="font-body-md text-body-md text-secondary">
+                      همه‌روزه از ساعت ۹:۰۰ الی ۲۱:۰۰
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="w-full md:w-auto bg-primary text-on-primary px-xl py-md font-label-caps text-label-caps hover:bg-primary-container transition-all"
+              >
+                مسیریابی هوشمند
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer
+      class="w-full py-xl border-t border-outline-variant bg-surface mt-xl"
+    >
+      <div
+        class="flex flex-col md:flex-row justify-between items-center max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop gap-md"
+      >
+        <div class="flex flex-col items-center md:items-start gap-xs">
+          <span class="font-display-lg text-headline-md text-primary"
+            >OBSIDIAN PROTEIN</span
+          >
+          <p class="font-label-caps text-[10px] text-secondary">
+            PREMIUM MEAT SELECTION
+          </p>
+        </div>
+        <div class="flex gap-lg">
+          <a
+            class="font-label-caps text-label-caps text-secondary hover:text-primary transition-colors"
+            href="#"
+            >سیاست حریم خصوصی</a
+          >
+          <a
+            class="font-label-caps text-label-caps text-secondary hover:text-primary transition-colors"
+            href="#"
+            >شرایط خدمات</a
+          >
+          <a
+            class="font-label-caps text-label-caps text-secondary hover:text-primary transition-colors"
+            href="#"
+            >تماس با ما</a
+          >
+        </div>
+        <p class="font-label-caps text-label-caps text-secondary">
+          © 2024 OBSIDIAN PROTEIN. تمام حقوق محفوظ است.
+        </p>
+      </div>
+    </footer>
+    <script>
+      // Simple scroll animation for headers
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
+          });
+        });
+      });
+
+      // Hover effect for map container
+      const mapContainer = document.querySelector("[data-location]");
+      if (mapContainer) {
+        mapContainer.parentElement.addEventListener("mouseenter", () => {
+          mapContainer.style.transform = "scale(1.05)";
+          mapContainer.style.transition = "transform 0.6s ease-out";
+        });
+        mapContainer.parentElement.addEventListener("mouseleave", () => {
+          mapContainer.style.transform = "scale(1)";
+        });
+      }
+    </script>
+  </body>
+</html>
