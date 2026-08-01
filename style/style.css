@@ -1,0 +1,62 @@
+@font-face {
+  font-family: "iransans";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/IranSansX\ \(Regular\).woff) format("woff");
+}
+
+/* Base typography */
+body {
+  font-family: "iransans", sans-serif;
+}
+
+/* Override Tailwind utility font classes so the local Persian font is used */
+.font-display-lg,
+.font-display-lg-mobile,
+.font-headline-md,
+.font-body-lg,
+.font-body-md,
+.font-label-caps {
+  font-family: "iransans", sans-serif !important;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+    "FILL" 0,
+    "wght" 400,
+    "GRAD" 0,
+    "opsz" 24;
+}
+
+/* Premium scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fcf8f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #b90027;
+  border-radius: 10px;
+}
+
+/* Map showcase */
+.map-surface {
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC-ety81jgMANHj2gaQAEant7eX6J75D7ep7yc3t2XjE01b280gDkOkq9uzyIiN2YEKq1HWtUJt2aWchdnK_bM4Vm-4hD2uR3lcGus0i1EWoyMQI_s3PNAtnJWepxwOpa5ou0gDwMLZC4zPnDRMeTd5ULvzMHfb7Z_3RosDUle-LGuRCgB-4kLQdhcOtayYt24MHusFN9hlfSm4SWHy9Pg7KiQFto4qUAByxvUwsFJBBZmiK9z0dfJD");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(0.5) contrast(1.1);
+  transition: transform 0.6s ease-out;
+  transform-origin: center;
+}
+
+.group:hover .map-surface {
+  transform: scale(1.05);
+}
