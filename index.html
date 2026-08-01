@@ -8,6 +8,10 @@
     <link rel="icon" type="image/x-icon" href="icon/1.png" />
     <link rel="stylesheet" href="style/style.css" />
     <link rel="stylesheet" href="style/font-awesome.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+      rel="stylesheet"
+    />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://batabprotein.com/" />
     <meta property="og:site_name" content="باتاب پروتئین" />
@@ -172,9 +176,33 @@
             >موقعیت ما</a
           >
         </nav>
-        <button class="md:hidden text-primary">
-          <span class="material-symbols-outlined text-[32px] fa fa-bars"></span>
+        <button
+          id="mobile-menu-toggle"
+          aria-controls="mobile-menu"
+          aria-expanded="false"
+          aria-label="باز کردن منو"
+          class="md:hidden text-primary"
+          type="button"
+        >
+          <span class="material-symbols-outlined text-[32px]">menu</span>
         </button>
+      </div>
+      <div
+        id="mobile-menu"
+        class="md:hidden hidden border-t border-outline-variant bg-surface"
+      >
+        <nav class="flex flex-col gap-md px-margin-mobile py-md">
+          <a
+            class="font-label-caps text-label-caps text-secondary hover:text-primary transition-colors duration-200"
+            href="#socials"
+            >شبکه‌های اجتماعی</a
+          >
+          <a
+            class="font-label-caps text-label-caps text-secondary hover:text-primary transition-colors duration-200"
+            href="#location"
+            >موقعیت ما</a
+          >
+        </nav>
       </div>
     </header>
     <main>
@@ -425,8 +453,32 @@
               behavior: "smooth",
             });
           }
+          const mobileMenu = document.getElementById("mobile-menu");
+          const toggle = document.getElementById("mobile-menu-toggle");
+          if (
+            mobileMenu &&
+            toggle &&
+            !mobileMenu.classList.contains("hidden")
+          ) {
+            mobileMenu.classList.add("hidden");
+            toggle.setAttribute("aria-expanded", "false");
+            toggle.querySelector("span").textContent = "menu";
+          }
         });
       });
+
+      const mobileToggle = document.getElementById("mobile-menu-toggle");
+      const mobileMenu = document.getElementById("mobile-menu");
+      if (mobileToggle && mobileMenu) {
+        mobileToggle.addEventListener("click", () => {
+          const isOpen = !mobileMenu.classList.contains("hidden");
+          mobileMenu.classList.toggle("hidden");
+          mobileToggle.setAttribute("aria-expanded", String(!isOpen));
+          mobileToggle.querySelector("span").textContent = isOpen
+            ? "menu"
+            : "close";
+        });
+      }
     </script>
   </body>
 </html>
