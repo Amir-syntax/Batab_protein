@@ -43,6 +43,18 @@ body {
   border-radius: 10px;
 }
 
+/* Site logo */
+.site-logo {
+  width: 8rem;
+  height: 8rem;
+}
+
+/* Social icon images */
+.social-icon {
+  width: 2rem;
+  height: 2rem;
+}
+
 /* Map showcase */
 .map-surface {
   width: 100%;
@@ -59,4 +71,34 @@ body {
 
 .group:hover .map-surface {
   transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .site-logo {
+    width: 13rem;
+    height: 13rem;
+  }
+
+  .social-icon {
+    width: 1.4rem;
+    height: 1.4rem;
+  }
+
+  .social-icon-wrapper {
+    width: 2.8rem;
+    height: 2.8rem;
+  }
+
+  .social-section {
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+  }
+
+  .social-cards-grid {
+    gap: 0.7rem;
+  }
+
+  .social-card {
+    padding: 0.8rem;
+  }
 }
